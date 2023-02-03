@@ -49,3 +49,11 @@ export default function IndexPage() {
     </>
   );
 }
+
+export const Head = () => (
+  <>
+    <title>Yusong Shi | Home</title>
+    <meta name="Home" content="Yusong Shi Homepage" />
+    <Seo title="Yusong Shi Homepage" />
+  </>
+);

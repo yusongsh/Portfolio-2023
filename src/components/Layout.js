@@ -3,11 +3,8 @@ import Nav from "./Nav";
 
 export default function Layout({ pageTitle, children, homeDestination }) {
   return (
-    <div class="min-h-screen flex flex-col justify-start w-screen p-8 md:px-16 lg:px-24 pb-10 transition duration-500">
-      <Nav />
-      <div className="py-8">
-        <main>{children}</main>
-      </div>
+    <div className="px-4 md:px-12 lg:px-24 pb-6 transition duration-500 h-full min-h-screen w-full flex flex-col">
+      <main>{children}</main>
     </div>
   );
 }

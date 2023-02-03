@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 import Seo from "../components/seo";
+import Nav from "../components/Nav";
 
 export default function Work() {
   return (
@@ -16,6 +17,7 @@ export default function Work() {
       >
         <h1 className="text-red-800 font-bold text-5xl">work</h1>
       </motion.div> */}
+      <Nav />
       <div className="pt-16 w-full flex flex-col lg:flex-row items-start justify-between max-w-screen-2xl m-auto">
         <h1 className="text-3xl font-bold leading-relaxed w-1/2 pb-8">Work</h1>
         <p className="text-2xl leading-relaxed w-full md:w-5/6 lg:w-1/2">

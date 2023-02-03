@@ -20,16 +20,16 @@ export default function Home() {
         <div class="absolute -bottom-8 left-20 w-52 h-52 bg-blue-400 rounded-full mix-blend-lighten filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="p-8 md:px-16 lg:px-24 pb-10 transition duration-500 h-full min-h-screen flex flex-col">
+      <div className="px-4 md:px-12 lg:px-24 pb-6 transition duration-500 h-full min-h-screen flex flex-col">
         <Nav />
-        <div className="flex flex-col justify-center m-auto w-3/5 h-full mix-blend-overlay">
-          <h1 className="text-3xl font-medium leading-relaxed">
+        <div className="flex flex-col justify-center m-auto w-full px-4 lg:px-0 lg:w-3/5 h-full">
+          <h1 className="text-2xl font-medium leading-relaxed lg:text-3xl lg:leading-relaxed ">
             {" "}
             Hello, world! I’m Yusong Shi, a product designer & frontend
             developer. I enjoy crafting interactive web applications and
             experimenting with new technology to convey stories.
           </h1>
-          <Link to="/about">
+          <Link to="/work">
             <motion.div
               className="flex flex-row items-center gap-8 mt-12 text-white"
               whileHover={{ x: 10 }}
@@ -48,15 +48,18 @@ export default function Home() {
                   d="M17 8l4 4m0 0l-4 4m4-4H3"
                 ></path>
               </svg>
-              <motion.p whileHover={{ x: 15 }} className="font-medium text-lg">
-                more about me
+              <motion.p
+                whileHover={{ x: 15 }}
+                className="font-normal lg:font-medium text-lg"
+              >
+                selected projects
               </motion.p>
             </motion.div>
           </Link>
         </div>
-        <div className="underline text-white flex justify-between pb-8">
+        <div className="underline text-white hidden md:flex justify-between pb-8">
           <div></div>
-          <button>résumé</button>
+          <Download />
         </div>
       </div>
     </motion.div>
@@ -70,3 +73,11 @@ export const Head = () => (
     <Seo title="Yusong Shi Homepage" />
   </>
 );
+
+const Download = () => {
+  return (
+    <Link to="../assets/Yusong-resume.pdf" download>
+      résumé
+    </Link>
+  );
+};
