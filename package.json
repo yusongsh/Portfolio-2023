@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "yusong-shis-portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Yusong Shi's Porfolio V-2",
+  "version": "1.0.0",
+  "author": "Yusong Shi",
   "dependencies": {
     "framer-motion": "^8.5.4",
     "gatsby": "^5.5.0",
