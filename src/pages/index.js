@@ -7,15 +7,11 @@ import { Link } from "gatsby";
 import Nav from "../components/Nav";
 import Seo from "../components/seo";
 
-export default function IndexPage({ data }) {
-  const {
-    contentfulAbout: { aboutMe, myPhoto },
-  } = data;
-
+export default function IndexPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [progress, setProgress] = useState(0);
   const x = useMotionValue(0);
-  const height = window.innerHeight;
+  // const height = window.innerHeight;
 
   useEffect(() => {
     setTimeout(() => {
@@ -53,17 +49,3 @@ export default function IndexPage({ data }) {
     </>
   );
 }
-
-export const query = graphql`
-  query about {
-    contentfulAbout {
-      id
-      myPhoto {
-        url
-      }
-      aboutMe {
-        aboutMe
-      }
-    }
-  }
-`;
